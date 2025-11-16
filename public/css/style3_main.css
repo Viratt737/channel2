@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    padding-top: 3rem;
+    color: white;
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.text{
+    margin-bottom: 10px; /* Reduces space below the first heading */
+    margin-top: 5px;    /* Reduces space above the second heading */
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+.para{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 100;
+}
+
+.button {
+    display: inline-block;      /* Makes it behave like a button */
+    padding: 10px 20px;         /* Adds space inside the button */
+    font-size: 16px;            /* Adjusts font size */
+    color: black;               /* Text color */
+    background-color: white; /* Button background color */
+    text-decoration: none;      /* Removes underline from text */
+    border: none;               /* Removes default border */
+    border-radius: 1rem;         /* Makes the corners rounded */
+    cursor: pointer;            /* Changes cursor to pointer */
+    text-align: center;         /* Aligns text to center */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    margin-right: 1.5rem;
+}
+
+.button:hover {
+    background-color: #9ebbda; /* Darker shade on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}

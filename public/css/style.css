@@ -1,0 +1,216 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container {
+    flex: 1;
+}
+
+/******************************** Navbar **********************************/
+
+.navbar {
+    background-color: black;
+    height: 5rem;
+    color: white;
+    padding-left: 2.5rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.fa-compass {
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 400;
+}
+
+.user {
+    color: white;
+    text-decoration: none;
+}
+
+.user_login {
+    margin-top: .5rem;
+}
+
+.nav-item {
+    padding-left: 10px;
+}
+
+#navbarNav {
+    padding-left: 70%;
+}
+
+@media (max-width: 950px) {
+    #navbarNav {
+        padding-left: 55%;
+    }
+}
+
+.nav-link:hover {
+    color: azure;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+
+/**Main body **********************/
+.container-box {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    margin-left: 7rem;
+    gap: 2rem;
+}
+
+.box {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;3
+    padding: 7.2rem;
+    font-size: 2.5rem; */
+
+
+    /* new */
+    border: 1px solid white;
+    width: 12rem;
+    height: 12rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10rem;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1);
+    /* Slightly zoom out initially */
+    display: block;
+    z-index: 0;
+}
+
+.box.active .hover-image {
+    opacity: 1;
+}
+
+/* Hide other boxes when one is hovered */
+.box.inactive {
+    opacity: 0;
+    pointer-events: none;
+    /* Disable interaction with inactive boxes */
+}
+
+.col a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+
+/***************** Show Page ********************/
+h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/******************* Card  ************************/
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 50rem;
+    background-color: black;
+    border: .5px solid white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    color: white;
+    font-size: larger;
+    font-weight: 800;
+}
+
+.card-body {
+    color: white;
+}
+
+.img-fluid {
+    margin-top: 3rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+.form-label{
+    color: white;
+}
